@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# Color codes
-GREEN = "\033[92m"
+# Font configuration
+BOLD = "\033[1m"
 ENDC = "\033[0m"
 
 while True:
@@ -22,9 +22,9 @@ while True:
             if check is True:
                 words = line.split()
                 for i in words:
-                    # Highlight keyword in line
+                    # Make keyword bold in line
                     if i.lower() in keywords:
-                        print(GREEN, end="")
+                        print(BOLD, end="")
                     else:
                         print(ENDC, end="")
 
